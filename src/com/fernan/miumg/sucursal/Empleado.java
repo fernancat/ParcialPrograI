@@ -1,5 +1,7 @@
 package com.fernan.miumg.sucursal;
 
+import com.fernan.miumg.pizza.Pizza;
+
 public class Empleado {
     private String nombre;
     private String puesto;
@@ -15,8 +17,8 @@ public class Empleado {
         System.out.println("El empleado: " + getNombre() + "\nPuesto: " + getPuesto() + "\n Esta trabajando");
     }
 
-    public void tomarOrden(){
-        System.out.println("El empleado: " + getNombre() + "\nPuesto: " + getPuesto() + "\n a tomado su orden");
+    public void tomarOrden(Pizza pizza){
+        System.out.println("El empleado: " + getNombre() + "\nPuesto: " + getPuesto() + "\n a tomado su orden " + "y va en camino con su: "  + pizza.getNombre());
     }
 
     public String getNombre() {
